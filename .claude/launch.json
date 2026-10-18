@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "hey100-dev",
+      "runtimeExecutable": "vercel",
+      "runtimeArgs": ["dev", "--listen", "3100", "--yes"],
+      "port": 3100
+    },
+    {
+      "name": "original-bundle",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "3101", "--directory", "/private/tmp/claude-501/-Users-jaryd-Projects-hey100-landing-page/5b8f7171-1ddf-43d0-b105-d9b8c5c37da1/scratchpad/orig"],
+      "port": 3101
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hey100 — Find your first 100 users</title>
+<meta name="description" content="Hey100 is like a dating app for your product. Match with other devs who are also building things. Try each other's apps, chat, share feedback.">
+<meta property="og:title" content="Hey100 — Find your first 100 users">
+<meta property="og:description" content="A match-making app for developers. Say hey to apps you'd use. When they say hey back, you match and trade real feedback.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hey100.com/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0E100F">
+<link rel="icon" href="/assets/icon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/assets/icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="/assets/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Titan+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<!-- ===================== HERO ===================== -->
+<div class="hero-wrap">
+<canvas class="cloud" aria-hidden="true"></canvas>
+<section id="join" class="hero">
+  <div class="tagline">Building is now the easy part.<br>Finding users is what's hard!</div>
+
+  <div>
+    <div class="logo" aria-label="Hey100">
+      <svg class="wave" viewBox="-4 -6 128 140" aria-hidden="true">
+        <path d="M30 124 C 18 110, 12 92, 14 76 L 10 48 C 9 38, 22 36, 24 46 L 28 70 L 26 24 C 25 12, 41 11, 42 23 L 46 64 L 48 12 C 49 0, 65 1, 64 14 L 62 64 L 70 22 C 72 11, 87 14, 84 26 L 76 72 C 84 64, 96 54, 106 58 C 116 62, 112 74, 104 80 L 88 100 C 78 118, 60 128, 44 128 C 38 128, 33 126, 30 124 Z" transform="translate(0,6)" fill="#111" stroke="#111" stroke-width="14" stroke-linejoin="round"/>
+        <path d="M30 124 C 18 110, 12 92, 14 76 L 10 48 C 9 38, 22 36, 24 46 L 28 70 L 26 24 C 25 12, 41 11, 42 23 L 46 64 L 48 12 C 49 0, 65 1, 64 14 L 62 64 L 70 22 C 72 11, 87 14, 84 26 L 76 72 C 84 64, 96 54, 106 58 C 116 62, 112 74, 104 80 L 88 100 C 78 118, 60 128, 44 128 C 38 128, 33 126, 30 124 Z" fill="#fff" stroke="#111" stroke-width="7" stroke-linejoin="round"/>
+      </svg>
+      <div class="word">
+        <span>Hey1</span>
+        <span class="zeros">
+          <span class="blink">00</span>
+          <svg class="under" viewBox="0 0 100 34" aria-hidden="true">
+            <path d="M6 6 Q50 36 90 8" pathLength="100" fill="none" stroke="#111" stroke-width="20" stroke-linecap="round"/>
+            <path d="M6 6 Q50 36 90 8" pathLength="100" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <h1 class="title">Find your next <span class="hundred">100</span> customers.<br><span class="title-line2">DM early users who are also makers like you</span></h1>
+  <div class="sub">Hey100 is like a dating app for your product. Match with other devs who are also building things. If you like each others apps--try them, chat, share feedback</div>
+
+  <div class="cta-area">
+    <div class="joinwrap" data-when="not-joined">
+      <form class="join" data-join novalidate>
+        <input type="email" name="email" placeholder="you@yourapp.com" autocomplete="email" required>
+        <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button type="submit" class="btn">
+          <svg class="hand sm" viewBox="-4 -6 128 140" aria-hidden="true"><path d="M30 124 C 18 110, 12 92, 14 76 L 10 48 C 9 38, 22 36, 24 46 L 28 70 L 26 24 C 25 12, 41 11, 42 23 L 46 64 L 48 12 C 49 0, 65 1, 64 14 L 62 64 L 70 22 C 72 11, 87 14, 84 26 L 76 72 C 84 64, 96 54, 106 58 C 116 62, 112 74, 104 80 L 88 100 C 78 118, 60 128, 44 128 C 38 128, 33 126, 30 124 Z" transform="translate(0,6)" fill="#111" stroke="#111" stroke-width="16" stroke-linejoin="round"/><path d="M30 124 C 18 110, 12 92, 14 76 L 10 48 C 9 38, 22 36, 24 46 L 28 70 L 26 24 C 25 12, 41 11, 42 23 L 46 64 L 48 12 C 49 0, 65 1, 64 14 L 62 64 L 70 22 C 72 11, 87 14, 84 26 L 76 72 C 84 64, 96 54, 106 58 C 116 62, 112 74, 104 80 L 88 100 C 78 118, 60 128, 44 128 C 38 128, 33 126, 30 124 Z" fill="#fff" stroke="#111" stroke-width="9" stroke-linejoin="round"/></svg>
+          <span data-label>Hey, I want this</span>
+        </button>
+      </form>
+      <div class="err" data-error hidden></div>
+    </div>
+
+    <div class="joined" data-when="joined" hidden>
+      <div class="pos">You're #<span data-position></span> on the list.</div>
+      <div class="note">We'll email <span data-email></span> when your wave opens. Share your link to move up.</div>
+      <div class="reflink"><span data-reflink>hey100.com/w/you</span><button type="button" data-copy>Copy</button></div>
+    </div>
+
+    <div class="social" data-count-row hidden>
+      <div class="faces" aria-hidden="true">
+        <span style="background:oklch(0.66 0.13 55)"></span>
+        <span style="background:oklch(0.66 0.13 250)"></span>
+        <span style="background:oklch(0.66 0.13 340)"></span>
+        <span style="background:oklch(0.66 0.13 150)"></span>
+        <span style="background:oklch(0.66 0.13 20)"></span>
+      </div>
+      <span class="count"><b data-count>0</b> builders on the waitlist</span>
+    </div>
+
+    <div class="fine"><span>A community for builders with real products</span></div>
+  </div>
+</section>
+</div>
+
+<!-- ===================== FOUNDER NOTE ===================== -->
+<section id="note" class="note-wrap">
+  <div class="note">
+    <div class="body">
+      <div class="phone"><iframe id="founder-video" src="https://www.tiktok.com/player/v1/7693549834074213645?music_info=0&amp;description=0&amp;rel=0&amp;controls=0&amp;play_button=1&amp;progress_bar=0&amp;volume_control=0&amp;fullscreen_button=0&amp;timestamp=0&amp;native_context_menu=0&amp;closed_caption=0" title="Jaryd on TikTok" allow="autoplay; fullscreen; encrypted-media" loading="lazy"></iframe><button type="button" class="phone-tap" data-video-toggle aria-label="Pause video" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#fff"/></svg></button></div>
+      <p class="hi"><svg class="hand md" viewBox="-4 -6 128 140" aria-hidden="true"><path d="M30 124 C 18 110, 12 92, 14 76 L 10 48 C 9 38, 22 36, 24 46 L 28 70 L 26 24 C 25 12, 41 11, 42 23 L 46 64 L 48 12 C 49 0, 65 1, 64 14 L 62 64 L 70 22 C 72 11, 87 14, 84 26 L 76 72 C 84 64, 96 54, 106 58 C 116 62, 112 74, 104 80 L 88 100 C 78 118, 60 128, 44 128 C 38 128, 33 126, 30 124 Z" transform="translate(0,6)" fill="#111" stroke="#111" stroke-width="16" stroke-linejoin="round"/><path d="M30 124 C 18 110, 12 92, 14 76 L 10 48 C 9 38, 22 36, 24 46 L 28 70 L 26 24 C 25 12, 41 11, 42 23 L 46 64 L 48 12 C 49 0, 65 1, 64 14 L 62 64 L 70 22 C 72 11, 87 14, 84 26 L 76 72 C 84 64, 96 54, 106 58 C 116 62, 112 74, 104 80 L 88 100 C 78 118, 60 128, 44 128 C 38 128, 33 126, 30 124 Z" fill="#fff" stroke="#111" stroke-width="9" stroke-linejoin="round"/></svg>Hey, I'm Jaryd.</p>
+      <p>Over the past few years I've shipped a lot of small apps. Some were good. Almost all of them got the same launch: a nice day on X, a few upvotes, a handful of signups, and then quiet.</p>
+      <p>The building part has never been easier. You can go from idea to App Store in a weekend now. What hasn't changed is the part after that: finding the first people who will actually open the thing, use it for a week, and tell you honestly what's broken.</p>
+      <p>I tried everything. I begged friends, posted in Discords, swapped "I'll try yours if you try mine" in DMs. The DM swaps were the only thing that worked. Another builder would try my app, I'd try theirs, and we'd both get real feedback, because we each had skin in the game.</p>
+      <p>So I'm building that as a product. Hey100 is a match-making app for developers. You make a "dating profile" for your product. You say hey to apps you'd genuinely use. When someone says hey back, you match, and you trade: you use theirs, they use yours, and you both send feedback.</p>
+      <p>It's invite-only to start, in small waves, so the first people in actually find good matches. If you have a real product and you're stuck finding your first 100 users, I'd love to have you.</p>
+    </div>
+
+    <div class="author">
+      <img class="photo" src="/assets/jaryd-400.png" srcset="/assets/jaryd-160.png 160w, /assets/jaryd-400.png 400w" sizes="56px" width="56" height="56" alt="Jaryd Hermann" loading="lazy" decoding="async">
+      <div class="who"><span class="name">Jaryd Hermann</span><span class="role">Founder, Hey100 · <a href="#">@jaryd</a></span></div>
+    </div>
+
+    <div class="note-cta">
+      <div class="joinwrap" data-when="not-joined">
+        <form class="join on-surface" data-join novalidate>
+          <input type="email" name="email" placeholder="you@yourapp.com" autocomplete="email" required>
+          <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button type="submit" class="btn tight">
+            <svg class="hand sm" viewBox="-4 -6 128 140" aria-hidden="true"><path d="M30 124 C 18 110, 12 92, 14 76 L 10 48 C 9 38, 22 36, 24 46 L 28 70 L 26 24 C 25 12, 41 11, 42 23 L 46 64 L 48 12 C 49 0, 65 1, 64 14 L 62 64 L 70 22 C 72 11, 87 14, 84 26 L 76 72 C 84 64, 96 54, 106 58 C 116 62, 112 74, 104 80 L 88 100 C 78 118, 60 128, 44 128 C 38 128, 33 126, 30 124 Z" transform="translate(0,6)" fill="#111" stroke="#111" stroke-width="16" stroke-linejoin="round"/><path d="M30 124 C 18 110, 12 92, 14 76 L 10 48 C 9 38, 22 36, 24 46 L 28 70 L 26 24 C 25 12, 41 11, 42 23 L 46 64 L 48 12 C 49 0, 65 1, 64 14 L 62 64 L 70 22 C 72 11, 87 14, 84 26 L 76 72 C 84 64, 96 54, 106 58 C 116 62, 112 74, 104 80 L 88 100 C 78 118, 60 128, 44 128 C 38 128, 33 126, 30 124 Z" fill="#fff" stroke="#111" stroke-width="9" stroke-linejoin="round"/></svg>
+            <span data-label>Hey, I want this</span>
+          </button>
+        </form>
+        <div class="err" data-error hidden></div>
+      </div>
+      <div class="joined-mini" data-when="joined" hidden>You're #<span data-position></span> on the list.</div>
+      <div class="note-count" data-count-row hidden><b data-count>0</b> builders on the waitlist</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section id="faq" class="faq">
+  <h2>Questions, answered</h2>
+  <div class="grid">
+    <div class="card"><div class="q">What is Hey100?</div><div class="a">A match-making app for developers. You list your product with screenshots and prompts, say hey to apps you'd use, and when someone says hey back you match and trade: you use theirs, they use yours.</div></div>
+    <div class="card"><div class="q">Who is it for?</div><div class="a">Indie builders and small teams with a real product and fewer than about 100 active users. iOS, Android, web apps, SaaS, browser extensions and AI tools all count.</div></div>
+    <div class="card"><div class="q">Do I need a live product?</div><div class="a">You need something people can use, even if it's in TestFlight or beta. Every account lists a product, which is what makes every match a fair trade.</div></div>
+    <div class="card"><div class="q">What's a trade?</div><div class="a">Once you match, both sides get each other's test links and codes. You each use the other app and send short, structured feedback: first impression, what confused you, what you'd pay.</div></div>
+    <div class="card"><div class="q">How is this different from feedback swap sites?</div><div class="a">No credits or queues. Both sides have to want to try each other's app before a chat opens, so the people testing your app actually chose it.</div></div>
+    <div class="card"><div class="q">Is it free?</div><div class="a">Your first 5 matches are free. After that, Pro unlocks unlimited heys and matches, better visibility and full analytics. Inviting a builder gets you both 3 more matches.</div></div>
+    <div class="card"><div class="q">Why invite-only?</div><div class="a">A match-making app only works when there are enough good matches. We are letting builders in by category, in waves, so each group has plenty of apps to find.</div></div>
+    <div class="card"><div class="q">What do you verify?</div><div class="a">Optionally connect GitHub, App Store Connect, Stripe or RevenueCat to show badges like "shipped", "active" or a revenue band. Exact numbers are never shown unless you choose to.</div></div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="foot">
+    <div class="col"><span class="big">Find your first 100 users.</span><span class="small">© 2026 Hey100 · hey100.com</span></div>
+    <a href="#join" class="btn foot-cta">
+      <svg class="hand sm" viewBox="-4 -6 128 140" aria-hidden="true"><path d="M30 124 C 18 110, 12 92, 14 76 L 10 48 C 9 38, 22 36, 24 46 L 28 70 L 26 24 C 25 12, 41 11, 42 23 L 46 64 L 48 12 C 49 0, 65 1, 64 14 L 62 64 L 70 22 C 72 11, 87 14, 84 26 L 76 72 C 84 64, 96 54, 106 58 C 116 62, 112 74, 104 80 L 88 100 C 78 118, 60 128, 44 128 C 38 128, 33 126, 30 124 Z" transform="translate(0,6)" fill="#111" stroke="#111" stroke-width="16" stroke-linejoin="round"/><path d="M30 124 C 18 110, 12 92, 14 76 L 10 48 C 9 38, 22 36, 24 46 L 28 70 L 26 24 C 25 12, 41 11, 42 23 L 46 64 L 48 12 C 49 0, 65 1, 64 14 L 62 64 L 70 22 C 72 11, 87 14, 84 26 L 76 72 C 84 64, 96 54, 106 58 C 116 62, 112 74, 104 80 L 88 100 C 78 118, 60 128, 44 128 C 38 128, 33 126, 30 124 Z" fill="#fff" stroke="#111" stroke-width="9" stroke-linejoin="round"/></svg>
+      Hey, I want this
+    </a>
+  </div>
+</footer>
+
+<script src="/main.js" defer></script>
+<script src="/cloud.js" defer></script>
+</body>
+</html>

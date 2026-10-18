@@ -1,0 +1,9 @@
+node_modules
+.vercel
+.env*
+!.env.example
+.DS_Store
+
+# Vendored agent skills — reinstalled by `vercel integration add`
+.agents/
+.claude/skills/
