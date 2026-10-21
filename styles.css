@@ -120,6 +120,9 @@ footer{border-top:1px solid var(--line)}
 
 /* ---- mobile: stack the email input above the button so the typed address stays visible ---- */
 @media (max-width: 560px){
+  /* nowrap would shrink a 36-character headline to 19px on a phone; let it break instead */
+  .title{white-space:normal;font-size:clamp(26px,7.4vw,31px);text-wrap:balance}
+  .title-line2{font-size:inherit;letter-spacing:inherit;margin-top:.4em}
   .join{flex-direction:column;gap:8px;padding:10px;border-radius:30px}
   /* flex:none — otherwise the row layout's flex:1 (basis 0) collapses the field to its text height */
   .join input[type=email]{flex:none;width:100%;height:60px;padding:0 20px;border-radius:30px;background:rgba(232,236,231,.06);font-size:17px}
