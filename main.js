@@ -162,6 +162,32 @@
     tap.addEventListener('click', () => post(playing ? 'pause' : 'play'));
   })();
 
+  // Scroll reveal: each line brightens as it climbs the viewport, so the problem
+  // unfolds a beat at a time. Lines stay fully lit in CSS until this takes over.
+  (function scrollReveal() {
+    const sec = document.querySelector('.reveal');
+    if (!sec) return;
+    const lines = Array.from(sec.querySelectorAll('.line'));
+    if (!lines.length || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    sec.classList.add('on');
+    let pending = false;
+    const update = () => {
+      pending = false;
+      const vh = innerHeight;
+      for (const el of lines) {
+        const r = el.getBoundingClientRect();
+        const mid = r.top + r.height / 2;
+        // fully lit by the time the line's middle reaches 55% of the viewport height
+        const p = Math.min(1, Math.max(0, (vh * 0.88 - mid) / (vh * 0.33)));
+        el.style.setProperty('--lit', p.toFixed(3));
+      }
+    };
+    const onScroll = () => { if (!pending) { pending = true; requestAnimationFrame(update); } };
+    addEventListener('scroll', onScroll, { passive: true });
+    addEventListener('resize', onScroll);
+    update();
+  })();
+
   loadJoined();
   render();
   $$('form[data-join]').forEach(f => f.addEventListener('submit', e => { e.preventDefault(); join(f); }));
