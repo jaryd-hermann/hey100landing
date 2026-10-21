@@ -36,7 +36,7 @@ input{outline:none}
 .logo .zeros{position:relative;display:inline-block}
 .logo .under{position:absolute;left:2%;top:110%;width:96%;height:21.8px;overflow:visible}
 .title{margin:0;font:500 clamp(19px,5vw,44px)/1.1 var(--mono);letter-spacing:-.05em;white-space:nowrap}
-.title-line2{white-space:normal;display:inline-block;max-width:100%}
+.title-line2{white-space:normal;display:inline-block;max-width:100%;font-size:clamp(15px,2.6vw,27px);letter-spacing:-.035em;color:var(--ink)}
 .hundred{font:400 1.08em/1 var(--display);letter-spacing:.01em;color:#fff;padding:0 .08em;
   text-shadow:.06em 0 0 #111,-.06em 0 0 #111,0 .06em 0 #111,0 -.06em 0 #111,.045em .045em 0 #111,-.045em .045em 0 #111,.045em -.045em 0 #111,-.045em -.045em 0 #111,0 .1em 0 #111}
 .sub{font-size:clamp(17px,2.3vw,20px);line-height:1.55;color:var(--muted);max-width:860px;text-wrap:balance}
