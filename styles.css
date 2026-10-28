@@ -128,3 +128,7 @@ footer{border-top:1px solid var(--line)}
   .join input[type=email]{flex:none;width:100%;height:60px;padding:0 20px;border-radius:30px;background:rgba(232,236,231,.06);font-size:17px}
   .join .btn{width:100%;height:58px;justify-content:center}
 }
+
+/* legal links in the footer line */
+.foot .small a{color:var(--muted);text-decoration:underline;text-underline-offset:3px}
+.foot .small a:hover{color:var(--ink);opacity:1}
